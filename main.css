@@ -1,0 +1,41 @@
+header{
+  width: 100%;
+}
+
+h1{
+  display: inline-block;
+  width: 65%;
+}
+
+nav{
+  display: inline-block;
+  width: 30%;
+  max-width: auto;
+}
+
+nav a{
+
+}
+
+.boxes, div{
+  display: flex;
+
+}
+
+.teachers{
+  width: 30%
+}
+
+.t-descrip{
+  border: .5px solid black;
+}
+
+.t-courses{
+  border: .5px solid black;
+  flex-direction: column;
+}
+
+.t-rating{
+  border: .5px solid black;
+  flex-direction: column;
+}
