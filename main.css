@@ -19,28 +19,32 @@ nav a{
 
 .boxes {
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.teachers{
-  width: 30%
+.teacher{
+  display: flex;
+  width: 30%;
+  flex-wrap: wrap;
 }
 
 .t-descrip{
   border: .5px solid black;
   width: 100%;
+  padding: 10%;
 }
 
 .t-courses{
   border: .5px solid black;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
+  padding: 5%;
+  box-sizing: border-box;
 }
 
 .t-rating{
   border: .5px solid black;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
+  padding: 5%;
+  box-sizing: border-box;
 }
