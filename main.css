@@ -10,6 +10,11 @@ h1{
   width: 65%;
 }
 
+h3{
+  text-align: center;
+  font-size: 1em;
+}
+
 nav{
   display: inline-block;
   width: 30%;
@@ -17,11 +22,13 @@ nav{
 }
 
 span{
-  width: 100%
+  width: 100%;
+  text-align: center;
 }
 
 nav a{
   padding: 5px 15px 5px 15px;
+  text-transform: uppercase;
 }
 
 .boxes {
@@ -52,10 +59,15 @@ nav a{
   padding-right: 7%;
 }
 
+.t-descrip div{
+  width: 100%
+  padding-left: 5%;
+  padding-top: 10%
+}
 
 .t-courses{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   border: .5px solid black;
   width: 50%;
   padding: 5%;
@@ -63,6 +75,8 @@ nav a{
 }
 
 .t-rating{
+  display: flex;
+  flex-direction: column;
   border: .5px solid black;
   width: 50%;
   padding: 5%;
