@@ -24,11 +24,16 @@ nav{
 span{
   width: 100%;
   text-align: center;
+  padding-bottom: 5px;
 }
 
 nav a{
   padding: 5px 15px 5px 15px;
   text-transform: uppercase;
+}
+
+nav a:active{
+  color: aqua;
 }
 
 .boxes {
@@ -41,8 +46,9 @@ nav a{
   display: flex;
   width: 30%;
   flex-wrap: wrap;
-  padding-top: 2%;
-  padding-bottom: 2%
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: seashell;
 }
 
 .t-descrip{
@@ -62,7 +68,7 @@ nav a{
 .t-descrip div{
   width: 100%
   padding-left: 5%;
-  padding-top: 10%
+  padding-top: 10%;
 }
 
 .t-courses{
@@ -81,4 +87,69 @@ nav a{
   width: 50%;
   padding: 5%;
   box-sizing: border-box;
+}
+
+.student{
+  display: flex;
+  width: 25%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: seashell;
+}
+
+.courses{
+  display: flex;
+  width: 25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: seashell;
+  border: .5px solid black;
+}
+
+.courses h3{
+  text-align: center;
+  font-size: 1em;
+  margin: 5px;
+}
+
+.c-name{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.c-info{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 30%;
+}
+
+.s-detail-1{
+  border: .5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.s-detail-2{
+  border: .5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.s-detail-2 h3{
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+.s-detail-1 img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 4%;
 }
