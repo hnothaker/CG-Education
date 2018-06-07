@@ -43,8 +43,8 @@ if (newRating < 5)
 {
   ratingArray = addTeacherRating(ratingArray, newRating);
   console.log(ratingArray)
-  var newAvgRating = getRatingAverage(ratingArray)
-  window.alert("Thanks for your review! " + teacherName + "'s average rating is now " + newAvgRating );
+  avgRating = getRatingAverage(ratingArray)
+  window.alert("Thanks for your review! " + teacherName + "'s average rating is now " + avgRating );
 }
 else if (newRating > 5)
 {
@@ -70,10 +70,10 @@ var studentMajor = "Empathy";
 var studentEmail = "Oprah@gmail.com";
 var studentGPA = 6.0;
 
-console.log("Student: " + studentName);
-console.log("Major: " + studentMajor);
-console.log("Email: " + studentEmail);
-console.log("GPA: " + studentGPA);
+//console.log("Student: " + studentName);
+//console.log("Major: " + studentMajor);
+//console.log("Email: " + studentEmail);
+//console.log("GPA: " + studentGPA);
 
 
 // Courses Variables
@@ -94,7 +94,30 @@ coursesArr = [
   ['Mathematics','Physics']
 ];
 
+function courseFilter(Arr, deptValue)
+{
+  deptCourseArr = [];
+  for(var i = 0; i < Arr.length; i++)
+  {
+    var course = coursesArr[i];
+    console.log(course)
+    for( var j = 0; j < course.length; j++)
+    {
+      var course2 = course[1];
+      if(course2 == deptValue)
+      {
+        deptCourseArr.push(course)
+        console.log("yeah if")
+      }
+      console.log(course2)
+    }
+  }
+  console.log(deptCourseArr);
+}
 
-console.log("Course: " + courseName);
-console.log("Teacher: " + courseTeacher);
-console.log("Semester: " + semester);
+courseFilter(coursesArr, department);
+
+
+//console.log("Course: " + courseName);
+//console.log("Teacher: " + courseTeacher);
+//console.log("Semester: " + semester);
